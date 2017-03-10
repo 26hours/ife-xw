@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>官网</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;padding: 0;box-sizing: border-box;
+		}
+		body
+		{
+			min-width: 1280px;
+		}
+		header
+		{
+			width: 100%;background: #ffffff;height: 55px;
+		}
+		#conta
+		{
+			width: 1280px;margin: auto;overflow: hidden;
+		}
+		#logo
+		{
+			margin-left: 30px;padding-left: 60px;background: url(logo.jpg);font-size: 25px;background-repeat: no-repeat;height: 55px;width: 140px;padding-top: 12px;float: left;
+		}
+		#login
+		{
+			margin-right: 30px;padding-left: 25px;background: url(login.jpg);height: 54px;background-repeat: no-repeat;font-size: 15px;float: right;padding-top: 12px;font-weight: 600;
+		}
+		nav
+		{
+			float: right;
+		}
+		 nav ul
+		{
+			list-style-type: none;
+		}
+		nav li
+		{
+			float: left;height: 55px;
+		}
+		nav ul a
+		{
+			text-decoration: none;color: #000000;padding: 15px 20px 0px 20px;display: block;height: 55px;font-size: 15px;outline: none;
+		}
+		nav ul a:hover {color: #d45d5c;border-bottom:4px solid #d45d5c;}
+		#login a
+		{
+			text-decoration: none;color: #d45d5c;
+		}
+		#banner
+		{
+			width: 100%;background: url(banner.jpg) center;height: 690px;background-size: cover;
+		}
+		#banner div
+		{
+			margin-left: 160px;padding-top: 230px;
+		}
+		#banner p
+		{
+			font-size: 24px;color: #fff;line-height: 35px;
+		}
+		#banner span
+		{
+			font-size: 60px;line-height: 85px
+		}
+		 #banner button
+		{
+			background: #e74f4d;width: 330px;height: 62px;font-size: 30px;color: #fff;border: 0;margin-left: 160px;margin-top: 50px;line-height: 62px;
+		}
+		#word
+		{
+			background:url(tubiao.jpg);background-size: 100% auto;height: 250px;background-repeat: no-repeat;
+		}
+		#word div
+		{
+			width: 25%;height: 53px;border-right: 2px #989898 solid;margin-top: 134px;float: left;
+		}
+		#word p
+		{
+			width: 11em;text-align: center;color: #989898;margin: auto;
+		}
+		#new
+		{
+			height: 360px;background: #ededed url(bj.jpg);background-size: 100% auto;background-repeat: no-repeat;
+		}
+		#new div
+		{
+			color: #a1a1a1;font-size: 50px;padding-top: 220px;text-align: center;
+		}
+		#search
+		{
+			background: url(search-bg.jpg) center;background-repeat: no-repeat;background-size: cover;height: 340px;
+		}
+		#search p
+		{
+			color: #fff;text-align: center;
+		}
+		#form
+		{
+			margin: 50px auto;width: 1050px;height: 40px;position: relative;
+		}
+		#search select,#search input
+		{
+			float: left;width: 240px;height: 40px;
+		}
+		#search select
+		{
+			margin-right: 30px;padding-left: 10px;
+		}
+		#ss
+		{
+			color: #fff;background: #be4e48;border: 0;font-size: 15px;
+		}
+		#sf
+		{
+			margin-right: 30px;padding-left: 10px;
+		}
+		#dis
+		{
+			width: 240px;position: absolute;left: 270px;top:40px;
+		}
+		#dis ul
+		{
+			overflow: hidden;width: 100%;border: 1px solid #d45d5c;background: #e3e3e3;
+		}
+		#dis li
+		{
+			width: 100%;height: 30px;
+		}
+		#dis a
+		{
+			display: block;width: 240px;height: 30px;padding:0px 0px 0px 30px;line-height: 30px;
+		}
+		#dis a:hover
+		{
+			background: #d45d5c;color: #fff;
+		}
+		#gallery
+		{
+			background: #f7f7f7;height: 610px;
+		}
+		#bm
+		{
+			width: 1000px;height: 610px;margin: 0 auto;padding: 110px 0px;
+		}
+		.hl
+		{
+			width: 220px;height: 390px;margin-right: 40px;float: left;position: relative;
+		}
+		.pic
+		{
+			width: 220px;height: 340px;border: 1px solid #dedede;padding: 10px;background: #fff;
+		}
+		.hd
+		{
+			width: 100%;position: absolute;bottom: 0;left: 0;
+		}
+		.hd p
+		{
+			text-align: center;font-size: 12px;color: #898989;
+		}
+		.time
+		{
+			width: 100%;overflow: hidden;margin: auto;max-width: 1280px;margin: auto;
+		}
+		.time-left
+		{
+			width: 66.66%;height: 565px;background: url(lump01.jpg) center;background-size: cover;background-repeat: no-repeat;float: left;position: relative;
+		}
+		.time-right
+		{
+			width: 33.33%;height: 565px;float: left;
+		}
+		.time-right ul
+		{
+			list-style-type: none;overflow: hidden;width: 99px;margin: auto;margin-top: 30px;
+		}
+		.time-right li
+		{
+			width: 13px;height: 13px;border: 1px solid #929292;border-radius: 50%;float: left;margin: 0px 10px;
+		}
+		#look
+		{
+			width: 100%;height: 520px;max-width: 1280px;margin: auto;
+		}
+		.look
+		{
+			width: 33.33%;height: 520px;float: left;
+		}
+		#vol li>a:before
+		{
+			content: url(more.png);
+		}
+		#contact
+		{
+			background: #32363E;height: 300px;
+		}
+		#contact ul
+		{
+			list-style-type: none;overflow: hidden;
+		}
+		#contact li
+		{
+			width: 55;height: 40px;float: left;
+		}
+		#contact a
+		{
+			display: block;width: 55px;height: 40px;
+		}
+		footer
+		{
+			background: #2f2f38;height: 60px;
+		}
+		footer div
+		{
+			width: 1280px;margin: auto;padding: 20px 30px 0px 50px;
+		}
+		footer span
+		{
+			color: #fff;font-size: 10px;float: left;
+		}
+		.clearfix:after
+		{
+			clear: both;display: block;height: 0;visibility: hidden;content: ".";
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="conta">
+			<div id="logo">新世界</div>
+			<div id="login"><a href="">登录</a></div>
+			<nav>
+				<ul>
+					<li><a href="" name="top">首页</a></li>
+					<li><a href="">最新活动</a></li>
+					<li><a href="">项目介绍</a></li>
+					<li><a href="">爱心社区</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="banner">
+		<div>
+			<p><span>Time of new life</span></p>
+			<p>新时代,年轻的人们让我们一起</p>
+			<p>体验新生活,享受新生活</p>
+		</div>
+		<button type="summit">开始体验</button>
+	</section>
+	<section id="word">
+		<div><p>打造全新世界观，让你更爱你的生活</p></div>
+		<div><p>丰富多彩的公益活动，发挥新世界的主人公意识</p></div>
+		<div><p>时尚的新理念，超前体验未知的生活</p></div>
+		<div style="border: 0;"><p>完善的培养机制，培养你的全新世界观</p></div>
+	</section>
+	<section id="new">
+		<div>关于新世界，你不知道的还有什么？</div>
+	</section>
+	<section id="search">
+		<p style="font-size: 24px;padding-top: 50px;">查找新世界城市活动信息</p>
+		<p style="font-size: 16px;font-weight: bold;">——</p>
+		<p style="font-size: 14px;line-height: 35px;">每个城市有不同的活动信息，请自主查询您所需要了解的城市</p>
+		<div id="form">
+		    <form>
+				<select>
+					<option>中国</option>
+					<option>美国</option>
+					<option>日本</option>
+					<option>韩国</option>
+					<option>英国</option>
+					<option>德国</option>
+				</select>
+				<!--<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>江苏</option>
+					<option>广东</option>
+					<option>福建</option>
+					<option>山东</option>
+				</select>-->
+				<input type="text" name="sf" placeholder="省份" id="sf">
+				<select>
+					<option>北京</option>
+					<option>上海</option>
+					<option>江苏</option>
+					<option>广东</option>
+					<option>福建</option>
+					<option>山东</option>
+				</select>
+				<input type="submit" name="sub" value="搜 索" id="ss">
+            </form>
+            <div id="dis">
+            	<ul>
+            		<li><a>北京</a></li>
+            		<li><a>上海</a></li>
+            		<li><a>江苏</a></li>
+            		<li><a>广东</a></li>
+            		<li><a>福建</a></li>
+            		<li><a>山东</a></li>
+            	</ul>
+            </div>
+		</div>
+	</section>
+	<section id="gallery">
+		<div id="bm">
+			<div class="hl">
+			    <div class="pic">
+					<img src="act01.jpg" width="200px" height="320px">
+				</div>
+				<div class="hd">
+					<p style="font-size: 15px;color: #000;line-height: 25px;">北京活动</p>
+					<p>新社区大联盟</p>
+				</div>
+			</div>
+			<div class="hl">
+				<div class="pic" style="position: absolute;left: 0;bottom: 0;">
+					<img src="act02.jpg" width="200px" height="320px">
+				</div>
+				<div style="position: absolute;left: 0;top: 0;width: 100%;">
+					<p style="text-align: center;font-size: 24px;line-height: 24px;">上&nbsp&nbsp海&nbsp&nbsp活&nbsp&nbsp动</p>
+					<p style="text-align: center;font-size: 12px;color: #898989;line-height: 25px;">夜上海新景观探索</p>
+				</div>
+			</div>
+			<div class="hl">
+				<div class="pic">
+					<img src="act03.jpg" width="200px" height="320px">
+				</div>
+				<div class="hd">
+					<p style="font-size: 15px;color: #000;line-height: 25px;">深圳活动</p>
+					<p>全新海岸线观点站</p>
+				</div>
+			</div>
+			<div class="hl" style="margin: 0;">
+				<div class="pic">
+					<img src="act04.jpg" width="200px" height="320px">
+				</div>
+				<div class="hd">
+					<p style="font-size: 15px;color: #000;line-height: 25px;">香港活动</p>
+					<p>奢侈消费大派送</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="time">
+		<div class="time">
+			<div class="time-left">
+				<p style="font-size: 50px;text-align: center;color: #fff;margin-top: 120px;">新世界</p>
+				<p style="font-size: 160px;text-align: center;color: #fff;margin-top: -40px;">TIME</p>
+				<p style="font-size: 25px;text-align: center;color: #fff;margin-top: -15px;">@新世界-北京</p>
+				<p style="font-size: 20px;text-align: center;color: #fff;margin-top: 10px;">2017.04.01</p>
+				<img src="225650.jpg" style="position: absolute;bottom: 0;right: 0;">
+			</div>
+			<div class="time-right">
+				<p style="font-size: 24px;margin: auto;line-height: 70px;margin-top: 140px;width: 120px;text-align: center;">新世界/<span style="color: red;">01</span></p>
+				<p style="font-size: 12px;color: #898989;width: 24em;margin: auto;line-height: 2.5em;">
+					新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界
+				</p>
+				<a href="" style="display: block;width: 110px;height: 35px;border: 1px solid red;color: red;margin: auto;text-align: center;line-height: 32px;margin-top: 40px;font-size: 12px;font-weight: bold;text-decoration: none;">更多详情</a>
+				<ul>
+					<li style="background: #929292;"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="look">
+		<div class="look" style="background: #e74f4d;">
+			<p style="color: #fff;font-size:22px;text-align: center;margin-top: 155px;">新时代</p>
+			<p style="color: #fff;font-size: 22px;text-align: center;margin-top: 5px;">关于爱生活的我们</p>
+			<p style="color: #fff;font-size: 16px;text-align: center;font-weight: bold;margin-top: 8px;">——</p>
+			<a href="" style="display: block;border: 1px solid #fff;color: #fff;margin: auto;text-align: center;width: 170px;height: 42px;line-height: 40px;text-decoration: none;margin-top: 15px;font-size: 18px;">查看更多</a>
+		</div>
+		<div class="look" style="background: #fff;position: relative;">
+			<p style="color: #e74f4d;font-size:22px;text-align: center;margin-top: 155px;">新时代</p>
+			<p style="color: #e74f4d;font-size: 22px;text-align: center;margin-top: 5px;">关于爱生活的我们</p>
+			<p style="color: #e74f4d;font-size: 16px;text-align: center;font-weight: bold;margin-top: 8px;">——</p>
+			<a href="" style="display: block;border: 1px solid #e74f4d;color: #e74f4d;margin: auto;text-align: center;width: 170px;height: 42px;line-height: 40px;text-decoration: none;margin-top: 15px;font-size: 18px;">查看更多</a>
+			<span style="position: absolute;top: 50%;left: 100%;margin-top: -10px;width: 0;height: 0;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-left: 20px solid #fff;"></span>
+		</div>
+		<div class="look">
+			<img src="train.png" width="100%" height="100%">
+		</div>
+	</section>
+	<section id="vol">
+		<div style="width: 1002px;margin: auto;padding-top: 120px;">
+			<h5 style="text-align: center;font-size: 20px;">成为我们的志愿者</h5>
+			<p style="color: red;font-size: 30px;text-align: center;font-weight: bolder;line-height: 20px;">—</p>
+			<p style="color: #6C7773;font-size: 13px;text-align: center;width: 34em;margin: auto;margin-top: 5px;">新世界的大家庭需要每一个爱生活的人加入，如果你够年轻，有梦想，有激情那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+		</div>
+		<div style="width: 1002px;margin: auto;margin-top: 120px;overflow: hidden;margin-bottom: 120px;">
+			<div style="width: 285px;float: left;">
+				<ul style="list-style-type: none;">
+					<li style="overflow: hidden;">
+						<h5 style="font-size: 15px;margin-bottom: 20px;">新世界志愿者协议</h5>
+						<p style="font-size: 12px;color: #6c7773;">
+							加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并本着平等自愿的原则......
+						</p>
+						<a href="" style="text-decoration: none;font-size: 10px;color: #6c7773;float: right;">more</a>
+					</li>
+					<li style="overflow: hidden;">
+						<h5 style="font-size: 15px;margin-bottom: 20px;">新世界志愿者权力</h5>
+						<p style="font-size: 12px;color: #6c7773;">
+							新世界志愿者享受新世界内部所有资源共享的权力，并且享受所在城市新世界活动的优先参与资格
+						</p>
+						<a href="" style="text-decoration: none;font-size: 10px;color: #6c7773;float: right;">more</a>
+					</li>
+					<li style="overflow: hidden;">
+						<h5 style="font-size: 15px;margin-bottom: 20px;">更多条款</h5>
+						<p></p>
+						<a href="" style="text-decoration: none;font-size: 10px;color: #6c7773;float: right;">more</a>
+					</li>
+				</ul>
+			</div>
+			<div style="width: 660px;float: right;margin-right: -10px;">
+				<div style="width: 310px;height: 40px;float: left;background: #ededed;margin: 0px 30px 20px 0px;padding: 5px 10px;">
+					<span style="line-height: 30px;font-size: 12px;padding-left: 10px;">姓名：</span>
+					<input type="text" name="xm" style="width: 239px;height: 30px;background: transparent;border: none;outline: none;">
+				</div>
+				<div style="width: 310px;height: 40px;float: left;background: #ededed;margin-bottom: 20px;padding: 5px 10px;">
+					<span style="line-height: 30px;font-size: 12px;padding-left: 10px;">年龄：</span>
+					<input type="text" name="xm" style="width: 239px;height: 30px;background: transparent;border: none;outline: none;">
+				</div>
+				<div style="width: 310px;height: 40px;float: left;background: #ededed;margin: 0px 30px 20px 0px;padding: 5px 10px;">
+					<span style="line-height: 30px;font-size: 12px;padding-left: 10px;">联系方式：</span>
+					<input type="text" name="xm" style="width: 215px;height: 30px;background: transparent;border: none;outline: none;">
+				</div>
+				<div style="width: 310px;height: 40px;float: left;background: #ededed;margin-bottom: 20px;padding: 5px 10px;">
+					<span style="line-height: 30px;font-size: 12px;padding-left: 10px;">联系地址：</span>
+					<input type="text" name="xm" style="width: 215px;height: 30px;background: transparent;border: none;outline: none;">
+				</div>
+				<div style="width: 650px;height: 120px;float: left;background: #ededed;margin-bottom: 20px;padding: 5px 10px;">
+					<span style="line-height: 10px;font-size: 12px;padding-left: 10px;">请简单描述你的梦想生活：</span>
+					<textarea style="width: 610px;height: 85px;border: none;outline: none;background: transparent;resize: none;margin-left: 10px;"></textarea>
+				</div>
+				<div style="width: 650px;height: 40px;float: left;background: #ededed;">
+					<input type="submit" name="tj" value="提交申请" style="border: none;width: 650px;height: 40px;font-size: 16px;">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<p style="font-size: 20px;color: #fff;text-align: center;padding-top: 80px;">联系我们</p>
+		<p style="font-size: 12px;color: #fff;text-align: center;width: 39em;margin: auto;margin-top: 10px;">
+			为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品咨询也可以通过以下任何方式关注我们的动态
+		</p>
+		<div style="margin: auto;width: 510px;height: 40px;margin-top: 20px;">
+			<form>
+				<input type="text" name="srh" placeholder="someone@email.com" style="width: 430px;height: 40px;padding:0px 10px;float: left;font-size: 16px;">
+				<button type="submit" value="提交" style="width: 80px;height: 40px;float: left;background: #6f7278;outline: none;border: none;color: #fff;font-size: 16px;">提 交</button>
+			</form>
+		</div>
+		<div style="width: 220px;height: 40px;margin: auto;margin-top: 20px;background: url(fx.jpg);">
+			<ul >
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div class="clearfix">
+			<span style="">@2017新世界</span>
+			<a href="#top" style="float: right;text-decoration: none;color: #fff;font-size: 12px;">Back to top</a>
+		</div>
+	</footer>
+</body>
+</html>
